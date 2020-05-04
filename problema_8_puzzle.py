@@ -1,13 +1,13 @@
 """ definirea problemei """
 
 import copy
-
+import time
 # configurația inițială
-config_initiala = [[7, 5, 2], [8, 0, 6], [3, 4, 1]]
+
+config_initiala = [[4, 0, 3], [2, 1, 5], [7, 8, 6]]
 
 # configurația scop
 config_scop = [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
-
 
 
 # determinarea pozitiilor pieselor pe tabla
@@ -24,18 +24,36 @@ pozitii_config_finala = pozitii_8_puzzle(config_scop)
 
 
 class Nod:
-    def __init__(self, puzzle):
-        self.info = puzzle
-        count = 0
-        # pozitiile pieselor la pasul curent
+    # distanta manhattan intre pozitia placutei si pozitia ei din scop
+    def euristica_1(self, puzzle):
         pozitii_config_curenta = pozitii_8_puzzle(puzzle)
-
-        for piesa in range(len(puzzle)*len(puzzle)):
-            if pozitii_config_curenta[piesa] != pozitii_config_finala[piesa]:
+        count = 0
+        for piesa in range(len(puzzle) * len(puzzle)):
+            if piesa == 0:
+                continue
+            if pozitii_config_curenta[piesa] == pozitii_config_finala[piesa]:
                 count += abs(pozitii_config_curenta[piesa][0] - pozitii_config_finala[piesa][0]) + abs(
                     pozitii_config_curenta[piesa][1] - pozitii_config_finala[piesa][1])
+        return count
 
-        self.h = count
+    # numarul de placute care nu se afla pe pozitia corect in scop
+    def euristica_2(self, puzzle):
+        count = 0
+        pozitii_config_curenta = pozitii_8_puzzle(puzzle)
+
+        for piesa in range(len(puzzle) * len(puzzle)):
+            if piesa == 0:
+                continue
+            if pozitii_config_curenta[piesa] != pozitii_config_finala[piesa]:
+                count += 1
+        return count
+
+    def __init__(self, puzzle):
+        self.info = puzzle
+
+        # aici schimbam tipul de euristica
+
+        self.h = self.euristica_2(puzzle)
 
     def __str__(self):
         return "({}, h={})".format(self.info, self.h)
@@ -171,10 +189,13 @@ def str_info_noduri(l):
     """
         o functie folosita strict in afisari - poate fi modificata in functie de problema
     """
-    sir = "\n[\n"
+    pas=0
+    sir = "\n"
     for x in l:
-        sir += str(x) + "  \n"
-    sir += "]"
+        sir += "\nPas " + str(pas) + ":\n"
+        pas +=1
+        sir += str(x.nod_graf.info[0]) + "  \n" + str(x.nod_graf.info[1]) + "  \n"+str(x.nod_graf.info[2]) + "  \n"
+        sir += "\n"
 
     return sir
 

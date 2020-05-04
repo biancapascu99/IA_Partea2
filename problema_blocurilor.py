@@ -22,15 +22,13 @@ def pozitii_cuburi(lista_stive):
             pozitie_cub[cub] = (i, j)
     return pozitie_cub
 
+
 # pozitiile cuburilor din configuratia scop
 pozitii_config_finala = pozitii_cuburi(config_scop)
 
 
 class Nod:
-    def __init__(self, lista_stive):
-        self.info = lista_stive
-
-        # euristica 1
+    def euristica_1(self, lista_stive):
         count = 0
         # pozitiile cuburilor la pasul curent
         pozitii_config_curenta = pozitii_cuburi(lista_stive)
@@ -38,7 +36,26 @@ class Nod:
             if pozitii_config_curenta[cub] != pozitii_config_finala[cub]:
                 count = count + 1
 
-        self.h = count
+        return count
+
+    def euristica_2(self, lista_stive):
+
+        count = 0
+        # pozitiile cuburilor la pasul curent
+        pozitii_config_curenta = pozitii_cuburi(lista_stive)
+        for cub in cuburi:
+            if pozitii_config_curenta[cub] != pozitii_config_finala[cub]:
+                count = count + 1
+                break
+
+        return count
+
+    def __init__(self, lista_stive):
+        self.info = lista_stive
+
+        # aici schimbam tipul de euristica
+
+        self.h = self.euristica_1(lista_stive)
 
     def __str__(self):
         return "({}, h={})".format(self.info, self.h)
@@ -156,7 +173,7 @@ class NodParcurgere:
                         stiva = lista_stive[s] + [cub_de_mutat]
 
                     else:
-                        stiva = lista_stive[s] # stivele nemodificate le copiem la fel
+                        stiva = lista_stive[s]  # stivele nemodificate le copiem la fel
 
                     stive_noi.append(stiva)
 
@@ -189,10 +206,13 @@ def str_info_noduri(l):
     """
         o functie folosita strict in afisari - poate fi modificata in functie de problema
     """
-    sir = "\n[\n"
+    pas = 0
+    sir = "\n"
     for x in l:
-        sir += str(x) + "  \n"
-    sir += "]"
+        sir += "\nPas " + str(pas) + ":\n"
+        pas += 1
+        sir += str(x.nod_graf.info[0]) + "  \n" + str(x.nod_graf.info[1]) + "  \n" + str(x.nod_graf.info[2]) + "  \n"
+        sir += "\n"
 
     return sir
 
