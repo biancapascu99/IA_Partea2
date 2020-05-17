@@ -1,5 +1,5 @@
 """ definirea problemei """
-"""Problema blocurilor"""
+
 
 # configurația inițială
 config_initiala = [['a'], ['b', 'c'], ['d']]
