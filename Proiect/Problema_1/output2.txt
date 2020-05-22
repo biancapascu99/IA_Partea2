@@ -1,0 +1,15 @@
+
+------------- Fisier inputoutput2.txt -----------------
+Drum de cost minim: 
+Initial: [('i', 1), ('i', 2), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 2)]
+Incuietori(stare scop): [('i', 1), ('i', 2), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 2)]
+S-au realizat 0 operatii
+euristica 1 0.0338945
+pasi: 1
+------------- Fisier inputoutput2.txt -----------------
+Drum de cost minim: 
+Initial: [('i', 1), ('i', 2), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 2)]
+Incuietori(stare scop): [('i', 1), ('i', 2), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 2)]
+S-au realizat 0 operatii
+euristica 2 0.0342017
+pasi: 1

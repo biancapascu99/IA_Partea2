@@ -1,0 +1,43 @@
+
+------------- Fisier inputoutput4.txt -----------------
+Drum de cost minim: 
+Initial: [('i', 3), ('i', 4), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+1) Incuietori: [('i', 3), ('i', 4), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [dgggddg] pentru a ajunge la [('i', 2), ('i', 4), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+2) Incuietori: [('i', 2), ('i', 4), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [gdggggg] pentru a ajunge la [('i', 2), ('i', 3), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+3) Incuietori: [('i', 2), ('i', 3), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [gdggggg] pentru a ajunge la [('i', 2), ('i', 2), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+4) Incuietori: [('i', 2), ('i', 2), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [gdggggg] pentru a ajunge la [('i', 2), ('i', 1), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+5) Incuietori: [('i', 2), ('i', 1), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [gdggggg] pentru a ajunge la [('i', 2), ('d', 0), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+6) Incuietori: [('i', 2), ('d', 0), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [didiigg] pentru a ajunge la [('i', 1), ('i', 1), ('i', 1), ('i', 2), ('i', 1), ('d', 0), ('d', 0)]
+7) Incuietori: [('i', 1), ('i', 1), ('i', 1), ('i', 2), ('i', 1), ('d', 0), ('d', 0)]
+Folosim cheia: [gdggggg] pentru a ajunge la [('i', 1), ('d', 0), ('i', 1), ('i', 2), ('i', 1), ('d', 0), ('d', 0)]
+8) Incuietori: [('i', 1), ('d', 0), ('i', 1), ('i', 2), ('i', 1), ('d', 0), ('d', 0)]
+Folosim cheia: [gigddgg] pentru a ajunge la [('i', 1), ('i', 1), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Incuietori(stare scop): [('i', 1), ('i', 1), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+S-au realizat 8 operatii
+euristica 1 0.1900909
+pasi: 106
+------------- Fisier inputoutput4.txt -----------------
+Drum de cost minim: 
+Initial: [('i', 3), ('i', 4), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+1) Incuietori: [('i', 3), ('i', 4), ('i', 2), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [iddgiig] pentru a ajunge la [('i', 4), ('i', 3), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('d', 0)]
+2) Incuietori: [('i', 4), ('i', 3), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('d', 0)]
+Folosim cheia: [dgggddg] pentru a ajunge la [('i', 3), ('i', 3), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+3) Incuietori: [('i', 3), ('i', 3), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [gdggggg] pentru a ajunge la [('i', 3), ('i', 2), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+4) Incuietori: [('i', 3), ('i', 2), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [dgggddg] pentru a ajunge la [('i', 2), ('i', 2), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+5) Incuietori: [('i', 2), ('i', 2), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [dgggddg] pentru a ajunge la [('i', 1), ('i', 2), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+6) Incuietori: [('i', 1), ('i', 2), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Folosim cheia: [gdggggg] pentru a ajunge la [('i', 1), ('i', 1), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+Incuietori(stare scop): [('i', 1), ('i', 1), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('d', 0)]
+S-au realizat 6 operatii
+euristica 2 0.8758139
+pasi: 193

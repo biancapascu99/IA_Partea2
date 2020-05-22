@@ -1,0 +1,27 @@
+
+------------- Fisier inputoutput3.txt -----------------
+Drum de cost minim: 
+Initial: [('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1)]
+1) Incuietori: [('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1)]
+Folosim cheia: [dgggddg] pentru a ajunge la [('d', 0), ('i', 1), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('i', 1)]
+2) Incuietori: [('d', 0), ('i', 1), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('i', 1)]
+Folosim cheia: [iddddid] pentru a ajunge la [('i', 1), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('i', 1), ('d', 0)]
+3) Incuietori: [('i', 1), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('i', 1), ('d', 0)]
+Folosim cheia: [dgggddg] pentru a ajunge la [('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0)]
+Incuietori(stare scop): [('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0)]
+S-au realizat 3 operatii
+euristica 1 0.035357
+pasi: 4
+------------- Fisier inputoutput3.txt -----------------
+Drum de cost minim: 
+Initial: [('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1)]
+1) Incuietori: [('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1), ('i', 1)]
+Folosim cheia: [dgggddg] pentru a ajunge la [('d', 0), ('i', 1), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('i', 1)]
+2) Incuietori: [('d', 0), ('i', 1), ('i', 1), ('i', 1), ('d', 0), ('d', 0), ('i', 1)]
+Folosim cheia: [iddddid] pentru a ajunge la [('i', 1), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('i', 1), ('d', 0)]
+3) Incuietori: [('i', 1), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('i', 1), ('d', 0)]
+Folosim cheia: [dgggddg] pentru a ajunge la [('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0)]
+Incuietori(stare scop): [('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0), ('d', 0)]
+S-au realizat 3 operatii
+euristica 2 0.0375763
+pasi: 9
