@@ -17,3 +17,8 @@
 * [Connect 4](https://github.com/biancapascu99/IA_Partea2/blob/master/Minimax%26Alfa-Beta/Connect_4.py)
 
 * [Reversi](https://github.com/biancapascu99/IA_Partea2/blob/master/Minimax%26Alfa-Beta/Reversi.py)
+
+### Proiect
+
+* [Problema Lacatului](https://github.com/biancapascu99/IA_Partea2/blob/master/Proiect/Problema_1/Pb1_Problema_Lacatului.py)
+* [Dots and Boxes](https://github.com/biancapascu99/IA_Partea2/blob/master/Proiect/Problema_2/dotsandboxes.py)
